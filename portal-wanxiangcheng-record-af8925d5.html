@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识库 · 万象城 | 再次发现与珍藏</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #f8f5f0;
+            font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2e2a24;
+            line-height: 1.8;
+            padding: 2rem 1rem;
+        }
+
+        .page-wrapper {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #fefcf8;
+            padding: 2.5rem 2.2rem 3rem;
+            border-radius: 18px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.02), 0 6px 18px rgba(0,0,0,0.03);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            border-bottom: 1px solid #d9d2c5;
+            padding-bottom: 0.6rem;
+            margin-bottom: 1.8rem;
+            color: #3e352c;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2rem 0 0.8rem 0;
+            color: #4c4036;
+            border-left: 4px solid #b8aa94;
+            padding-left: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.4rem 0;
+            color: #4f463c;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        a {
+            color: #7a6a55;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: #a38464;
+            text-decoration-color: #a38464;
+        }
+
+        .intro-box {
+            background: #f3efe8;
+            padding: 1.4rem 1.6rem;
+            border-radius: 12px;
+            margin: 1.6rem 0 1rem;
+            border-left: 6px solid #c7b8a4;
+        }
+
+        .intro-box p {
+            margin-bottom: 0.3rem;
+        }
+
+        .quote-block {
+            background: #faf8f4;
+            border-left: 3px solid #cbbca8;
+            padding: 0.8rem 1.2rem 0.8rem 1.6rem;
+            margin: 1.8rem 0 1.2rem;
+            font-style: italic;
+            color: #4f453b;
+        }
+
+        .quote-block p {
+            margin-bottom: 0.3rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 1.8rem;
+            margin: 1.2rem 0 0.6rem;
+        }
+
+        .info-item {
+            padding: 0.6rem 0 0.6rem 0.8rem;
+            border-bottom: 1px dashed #ddd6cb;
+        }
+
+        .info-item strong {
+            display: inline-block;
+            min-width: 4.2rem;
+            font-weight: 500;
+            color: #5e5246;
+        }
+
+        .button-note {
+            display: inline-block;
+            background: #ece6dc;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #3f3730;
+            margin-right: 0.3rem;
+        }
+
+        .faq-mini {
+            margin: 1.4rem 0 0.6rem;
+            border-top: 1px solid #e3dbcf;
+            padding-top: 1.2rem;
+        }
+
+        .faq-mini details {
+            margin-bottom: 0.6rem;
+            padding: 0.4rem 0.2rem;
+        }
+
+        .faq-mini summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4d4238;
+            list-style: '▸ ';
+        }
+
+        .faq-mini details[open] summary {
+            list-style: '▾ ';
+        }
+
+        .faq-mini details p {
+            margin: 0.5rem 0 0.2rem 1rem;
+            padding-left: 0.2rem;
+            border-left: 2px solid #d3c9bc;
+            padding-left: 1rem;
+            color: #3f372f;
+        }
+
+        .tag {
+            background: #e6dfd4;
+            padding: 0.15rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            color: #3f3730;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e0d8cb;
+            margin: 2rem 0 1.2rem;
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            color: #716658;
+            border-top: 1px solid #e7dfd3;
+            padding-top: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 540px) {
+            .page-wrapper {
+                padding: 1.5rem 1rem;
+            }
+            h1 { font-size: 1.6rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            .intro-box { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <h1>⏺ 再次回来 · 万象城</h1>
+
+    <div class="intro-box">
+        <p>这里是关于 <a href="https://portal-wanxiangcheng.com">万象城</a> 的一份轻量知识索引。无论你是初次遇见，还是再次归来，我们希望你每次打开这扇页面时，都能找到一点熟悉的线索、一些新鲜的参照。</p>
+        <p style="color:#5f5549; font-size:0.95rem;">—— 这里不是入口，更像书架侧面的一枚便签。</p>
+    </div>
+
+    <h2>📖 关于这座“城”</h2>
+    <p>
+        “万象城”三个字，常让人联想到一座汇集了多种可能性的地方。它并非只指向单一的商业体或地址，而更像一个持续演化的信息容器——在不同时期、不同场景中，它承载的内容也会呈现差异。如果你此前已经浏览过，或许会发现有些页面又调整了结构；如果你今天第一次听说，不妨从左侧的目录或下文提示开始，慢慢理清脉络。
+    </p>
+    <p>
+        目前 <a href="https://portal-wanxiangcheng.com">万象城</a> 所提供的信息主要围绕特定领域的资料整合、索引链接及阶段性更新说明。由于内容会不定期补充，我们建议你将其视为一个“活页夹”，而非一成不变的公告板。
+    </p>
+
+    <div class="quote-block">
+        <p>“再次访问的意义，不只在于找回上一次看到的位置，更在于发现那些悄然新增的局部。” —— 某位常客的笔记</p>
+    </div>
+
+    <h2>🧭 信息分布格局</h2>
+    <p>从当前页面结构来看，<strong>万象城</strong> 的内容主要分布在以下几个方向：</p>
+    <div class="info-grid">
+        <div class="info-item"><strong>· 导览</strong> 概括性说明与层级指引</div>
+        <div class="info-item"><strong>· 存档</strong> 过往版本或静态页面归档</div>
+        <div class="info-item"><strong>· 备忘</strong> 短篇说明、注意事项、修订记录</div>
+        <div class="info-item"><strong>· 关联</strong> 指向其他辅助站或工具页</div>
+    </div>
+    <p style="margin-top:0.6rem; font-size:0.92rem; color:#5e5348;">这些区域之间没有强制顺序，你可以依照当前需要选择切入。如果你习惯先看整体概览，再深入局部，那么从“导览”开始会比较顺手。</p>
+
+    <h2>💡 提示与习惯</h2>
+    <p>
+        ▸ 如果你打算隔一段时间再回来，可以考虑把当前页面添加到书签，或者记录下你感兴趣的片段。因为<a href="https://portal-wanxiangcheng.com">万象城</a> 的某些子页面或说明区域可能会随着数据整理而改变位置或表述方式。
+    </p>
+    <p>
+        ▸ 目前没有设置订阅推送，因此保持关注的最好方式就是间歇性回访。回访时不妨留意页面顶部或侧边的标注区域，那里会提示近期有无内容更动。
+    </p>
+    <p>
+        ▸ 若在浏览中遇到链接失效、描述矛盾或想进一步了解某个条目，可以尝试通过站内提供的反馈方式（如果有）留言。由于维护周期不固定，请耐心等待回应。
+    </p>
+
+    <h2>❓ 常见问题 (摘要)</h2>
+    <div class="faq-mini">
+        <details>
+            <summary>我上次看到的一篇文章找不到了，怎么办？</summary>
+            <p>可能的原因：该页面被归入新的分类，或者链接已更新。你可以从导览页的“存档/历史”部分找找旧链接列表。如果仍然没有找到，说明该内容可能已被替换或移除。</p>
+        </details>
+        <details>
+            <summary>万象城的更新频率是怎样的？</summary>
+            <p>没有固定周期。有时一周内多次调整，有时数月不变。更新内容会集中在“近期变化”或版本备注中体现。建议每次回访时快速扫一眼说明区。</p>
+        </details>
+        <details>
+            <summary>这里是否提供下载或外部资源？</summary>
+            <p>部分说明页中会附带指向外部文档或代码仓的链接，但请注意那些链接的时效性与安全性。万象城本身仅作索引与介绍，不直接托管第三方文件。</p>
+        </details>
+    </div>
+
+    <hr>
+
+    <h2>🔖 相关信息区</h2>
+    <p><span class="tag">收藏参考</span> 如果你想快速回到这里，可以将此页加入浏览器收藏夹，或记住“万象城”这个标识。下面这个句子可以帮你自然定位：</p>
+    <div class="quote-block" style="font-style:normal; margin-top:0.4rem;">
+        <p style="margin-bottom:0;">“我通常从 <a href="https://portal-wanxiangcheng.com">万象城</a> 这个索引页开始，再跳到具体需要的地方。” —— 使用者反馈</p>
+    </div>
+
+    <p><span class="tag">场景设想</span> 假设你今天想回顾某份旧资料，但已经不记得具体路径。你可以先打开此页，浏览各个分区标题，再根据记忆中的关键词去相应板块寻找。如果一无所获，可能说明那份资料已经归档或下架。</p>
+
+    <p><span class="tag">持续关注</span> 没有邮件列表，也没有社交媒体账号。保持关注的方法就是偶尔回来点开 <a href="https://portal-wanxiangcheng.com">万象城</a> 的链接，花一两分钟看看有没有新动向。</p>
+
+    <div class="footer-note">
+        <p>这份介绍页本身也是“万象城”内容的一部分。它不会频繁变更，但若出现重要调整，我们会在站内注明日期。感谢你的耐心阅读，祝你每次回来都有恰好的收获。</p>
+        <p style="margin-top:0.6rem; font-size:0.8rem; color:#837a6e;">—— 页面更新于最近一次整理 · 以实际显示为准</p>
+    </div>
+
+</div>
+</body>
+</html>
